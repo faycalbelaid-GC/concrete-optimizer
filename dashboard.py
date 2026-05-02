@@ -378,6 +378,9 @@ def update(cement, wb, fa_pct, slag_pct, sf_pct,
     return kpis + [carb_fig, cl_fig, sl_fig, comp_fig, sens_fig]
 
 
+# Expose WSGI server for Gunicorn (Render / Railway / Heroku)
+server = app.server
+
 if __name__ == '__main__':
     print("Dashboard disponible sur http://127.0.0.1:8050")
-    app.run(debug=True, port=8050)
+    app.run(debug=False, port=8050)

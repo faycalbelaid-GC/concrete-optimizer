@@ -3,3 +3,4 @@ scipy>=1.10
 matplotlib>=3.7
 plotly>=5.17
 dash>=2.14
+gunicorn>=21.2
